@@ -13,15 +13,33 @@
       align-items: center;
       height: 100vh;
       background-color: #fff;
+      text-align: center;
     }
+
     .video-container {
       width: 100%;
-      max-width: 1920px;
-      margin: 0 auto;
+      max-width: 2000px;
       background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    }
+
+    video {
+      width: 100%;
+      max-width: 2000px;
+      height: auto;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
@@ -29,11 +47,5 @@
 
   <!-- Contenedor de video -->
   <div class="video-container">
-    <video width="1920" height="1080" controls autoplay loop>
-      <!-- URL del video dentro de la carpeta 'videos' -->
-      <source src="https://rubenbonetg.github.io/phantom/videos/phantom2.mp4" type="video/mp4">
-    </video>
-  </div>
-
-</body>
-</html>
+    <video controls autoplay loop>
+      <source src="https://raw.githubusercontent.com/rubenbonetg/phantom/main/videos/V%C3%ADdeo%
