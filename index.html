@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phantom Video</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
+    }
+    .video-container {
+      width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
-<body style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #fff;">
+<body>
 
-  <!-- Video con fuente correcta -->
-  <video width="1920" height="1080" controls autoplay loop>
-    <source src="https://rubenbonetg.github.io/phantom/Phantom%20video/%C3%9Cvido%20sin%20t%C3%ADtulo%20-%20Hecho%20con%20Clipchamp%20(1).mp4
-">
-     </video>
+  <!-- Contenedor de video -->
+  <div class="video-container">
+    <video width="1920" height="1080" controls autoplay loop>
+      <!-- URL del video dentro de la carpeta 'videos' -->
+      <source src="https://rubenbonetg.github.io/phantom/videos/phantom2.mp4" type="video/mp4">
+    </video>
+  </div>
 
 </body>
 </html>
