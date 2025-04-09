@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Video</title>
+  <title>Phantom Video</title>
 </head>
 <body style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #fff;">
 
   <video width="1920" height="1080" controls autoplay loop>
-    <source src="https://raw.githubusercontent.com/tuusuario/tu-repositorio/rama/video.mp4" type="video/mp4">
+    <source src="https://raw.githubusercontent.com/rubenbonetg/rubenbonetg/main/Phantom%20video/%C3%9Cvido%20sin%20t%C3%ADtulo%20-%20Hecho%20con%20Clipchamp%20(1).mp4" type="video/mp4">
     Tu navegador no soporta el elemento de video.
   </video>
 
