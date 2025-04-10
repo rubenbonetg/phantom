@@ -48,4 +48,29 @@
   <!-- Contenedor de video -->
   <div class="video-container">
     <video controls autoplay loop>
-      <source src="https://raw.githubusercontent.com/rubenbonetg/phantom/main/videos/V%C3%ADdeo%
+      <source src="videos/video-sin-titulo-clipchamp.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+
+  <!-- Botón de Embed -->
+  <button id="embedBtn">Copiar código Embed</button>
+
+  <script>
+    document.getElementById('embedBtn').addEventListener('click', function() {
+      const embedCode = `<iframe src="https://rubenbonetg.github.io/phantom/videos/video-sin-titulo-clipchamp.mp4" width="2000" height="2000" frameborder="0" allow="autoplay; fullscreen" title="Phantom Video"></iframe>`;
+      
+      // Crear un input temporal para copiar el código embed
+      const tempInput = document.createElement('input');
+      tempInput.value = embedCode;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+
+      alert("Código embed copiado al portapapeles");
+    });
+  </script>
+
+</body>
+</html>
